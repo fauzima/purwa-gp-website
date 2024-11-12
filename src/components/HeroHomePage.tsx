@@ -20,6 +20,8 @@ export default function HeroHomePage() {
         <Image
           className="h-full w-full object-cover object-center"
           src={Hero}
+          width={910}
+          height={480}
           alt="Hero"
         />
       </div>

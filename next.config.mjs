@@ -1,4 +1,18 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    images: {
+      remotePatterns: [
+        {
+          protocol: "https",
+          hostname: "tailwindcss.com",
+        },
+        {
+          protocol: "https",
+          hostname: "assets.ctfassets.net",
+        },
+      ],
+    },
+  };
+  
+  export default nextConfig;
+  

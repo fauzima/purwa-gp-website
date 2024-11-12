@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Hero from "../public/6.jpg";
+import Card from "../public/7.jpg"
 
 export default function UpNextCard() {
   return (
@@ -7,7 +7,9 @@ export default function UpNextCard() {
       <div className="w-full aspect-square bg-slate-100 dark:bg-black overflow-hidden">
         <Image
           className="h-full w-full object-cover object-center group-hover:scale-110 transition-transform ease-in-out"
-          src={Hero}
+          src={Card}
+          width={910}
+          height={480}
           alt="Hero"
         />
       </div>
