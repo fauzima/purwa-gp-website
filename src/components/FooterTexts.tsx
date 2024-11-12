@@ -1,6 +1,6 @@
 export default function FooterTexts() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col text-slate-700 dark:text-slate-400">
       <div className="flex flex-col lg:flex-row-reverse lg:justify-between text-lg lg:text-base items-center">
         <ul className="flex flex-wrap justify-evenly gap-5 lg:gap-4 pb-5">
           <li className="hover:underline hover:cursor-pointer">Career</li>
