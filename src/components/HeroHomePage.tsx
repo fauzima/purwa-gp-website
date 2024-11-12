@@ -20,6 +20,7 @@ export default function HeroHomePage() {
       <div className="w-full lg:w-1/2 lg:max-h-[80vh] aspect-[4_/_3] sm:aspect-video lg:aspect-square bg-slate-100 dark:bg-black overflow-hidden">
         <Image
           className="h-full w-full object-cover object-[30%] sm:object-center lg:object-[30%]"
+          priority
           src={Hero}
           alt="Hero"
         />
