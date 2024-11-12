@@ -10,11 +10,12 @@ export default function UpNext() {
   }, []);
   return (
     <div className="max-w-screen-2xl mx-auto w-full">
-      <div className="flex flex-col px-4 sm:px-8">
+      <div className="flex flex-col">
         <div
           data-aos="fade-right"
-          data-aos-duration="1000"
-          className="text-4xl mb-16"
+          data-aos-duration="1500"
+          data-aos-once="true"
+          className="text-4xl md:text-6xl mb-[10vh] px-4 sm:px-8"
         >
           <h1 className="font-semibold text-sky-700 dark:text-slate-100">
             UP NEXT
@@ -23,10 +24,11 @@ export default function UpNext() {
         </div>
         <div
           data-aos="fade-right"
-          data-aos-duration="1000"
+          data-aos-duration="1500"
+          data-aos-once="true"
           data-aos-delay="500"
           data-aos-offset="0"
-          className="flex flex-wrap content-start gap-x-[24px] gap-y-16 mb-[10vh] lg:mb-[20vh]"
+          className="flex flex-wrap content-start gap-x-[24px] gap-y-16 mb-[10vh] lg:mb-[20vh] px-4 sm:px-8"
         >
           <UpNextCard />
           <UpNextCard />

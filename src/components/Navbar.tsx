@@ -15,10 +15,11 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 z-40 w-full backdrop-blur flex-none transition-colors supports-[backdrop-blur]:bg-white/60 dark:bg-transparent border-b border-slate-900/10 dark:border-slate-300/10">
       <nav className="max-w-screen-2xl mx-auto">
-        <div className=" mx-auto px-3 sm:px-4 lg:px-5">
+        <div className=" mx-auto px-4 sm:px-8">
           <div className="h-[60px] relative flex w-full items-center">
             <button
               onClick={() => navButton()}
+              aria-label="Navigation drawer button"
               className="group lg:hidden rounded-md ring-1 ring-slate-900/5 shadow-sm hover:shadow hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:hover:shadow-none hover:shadow-indigo-200 bg-white/25 hover:bg-white/50 dark:hover:bg-indigo-600 dark:bg-slate-600/25 transition ease-in-out"
             >
               <TiThMenu className="h-7 w-7 p-[5px] text-indigo-300 group-hover:text-indigo-400 dark:text-slate-300" />

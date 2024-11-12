@@ -1,4 +1,5 @@
 import HeroHomePage from "@/components/HeroHomePage";
+import OurDriverHomePage from "@/components/OurDriverHomePage";
 import SubHeroHomePage from "@/components/SubHeroHomePage";
 import UpNext from "@/components/UpNextHomePage";
 
@@ -8,6 +9,7 @@ export default function HomePage() {
       <HeroHomePage />
       <SubHeroHomePage />
       <UpNext />
+      <OurDriverHomePage />
     </div>
   );
 }

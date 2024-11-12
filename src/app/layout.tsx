@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ThemeContextProvider from "@/helpers/ThemeContext";
 import Footer from "@/components/Footer";
-import HeaderImage from "@/components/HeaderImage";
+// import HeaderImage from "@/components/HeaderImage";
 
 export const metadata: Metadata = {
   title: "Purwa GP Formula One Team",
@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 transition-colors ease-in-out min-h-screen hover:cursor-default">
         <ThemeContextProvider>
-          <HeaderImage />
+          {/* <HeaderImage /> */}
           <div className="min-h-screen flex flex-col">
             <Navbar />
             <main className="flex-grow">{children}</main>

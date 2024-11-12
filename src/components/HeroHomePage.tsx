@@ -13,19 +13,18 @@ export default function HeroHomePage() {
   return (
     <div
       data-aos="zoom-in"
-      data-aos-duration="1000"
+      data-aos-duration="1500"
+      data-aos-once="true"
       className="flex flex-col lg:flex-row-reverse mb-[10vh] lg:mb-[20vh]"
     >
       <div className="w-full lg:w-1/2 lg:max-h-[80vh] aspect-[4_/_3] sm:aspect-video lg:aspect-square bg-slate-100 dark:bg-black overflow-hidden">
         <Image
-          className="h-full w-full object-cover object-center"
+          className="h-full w-full object-cover object-[30%] sm:object-center lg:object-[30%]"
           src={Hero}
-          width={910}
-          height={480}
           alt="Hero"
         />
       </div>
-      <div className="relative w-full max-w-[80vh] lg:w-1/2 sm:max-h-[80vh] aspect-video lg:aspect-square px-4 sm:px-8 py-8 text-4xl md:text-6xl lg:content-center">
+      <div className="relative w-full max-w-[80vh] lg:w-1/2 sm:max-h-[80vh] aspect-video lg:aspect-square px-4 sm:px-8 py-8 text-4xl sm:text-6xl lg:content-center">
         <h1 className="font-semibold mb-2 lg:mb-4 text-sky-700 dark:text-slate-100">
           HOME OF THE
         </h1>

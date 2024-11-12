@@ -10,16 +10,12 @@ export default function HeaderImage() {
           className="w-[71.75rem] flex-none max-w-none dark:hidden"
           src={lightrays}
           priority={true}
-          width={1148}
-          height={334}
           alt="light rays"
         />
         <Image
           className="w-[90rem] flex-none max-w-none hidden dark:block"
           src={darkrays}
-          width={1140}
-          height={616}
-          alt=""
+          alt="dark rays"
         />
       </div>
     </div>

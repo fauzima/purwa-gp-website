@@ -10,12 +10,13 @@ export default function SubHeroHomePage() {
   return (
     <div
       data-aos="fade-right"
-      data-aos-duration="1000"
-      className="max-w-screen-2xl mx-auto w-full mb-[10vh] lg:mb-[20vh] text-xl text-slate-700 dark:text-slate-300"
+      data-aos-duration="1500"
+      data-aos-once="true"
+      className="max-w-screen-2xl mx-auto w-full mb-[10vh] lg:mb-[20vh] px-4 sm:px-8 text-xl text-slate-700 dark:text-slate-300"
     >
-      <div className="flex flex-col gap-10 px-4 sm:px-8">
+      <div className="flex flex-col gap-10 x">
         <p className="font-semibold">
-          Step into a world of exhilaration with Purwa GP.
+          Step into a world of exhilaration with Purwa GP...
         </p>
         <p className="">
           After our first taste of victory in F1 at the 1990 Belgian Grand Prix,

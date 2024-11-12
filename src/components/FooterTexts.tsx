@@ -1,15 +1,16 @@
 export default function FooterTexts() {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col lg:flex-row-reverse lg:justify-between text-sm">
-        <div className="flex flex-wrap justify-center gap-4 pb-5">
-          <p className="hover:underline hover:cursor-pointer">Investors</p>
-          <p className="hover:underline hover:cursor-pointer">Community Code</p>
-          <p className="hover:underline hover:cursor-pointer">Cookie Policy</p>
-          <p className="hover:underline hover:cursor-pointer">Privacy Policy</p>
-          <p className="hover:underline hover:cursor-pointer">Licensing</p>
-        </div>
-        <p className="text-center lg:text-start pb-5">
+      <div className="flex flex-col lg:flex-row-reverse lg:justify-between text-lg lg:text-base items-center">
+        <ul className="flex flex-wrap justify-evenly gap-5 lg:gap-4 pb-5">
+          <li className="hover:underline hover:cursor-pointer">Career</li>
+          <li className="hover:underline hover:cursor-pointer">Investors</li>
+          <li className="hover:underline hover:cursor-pointer">Community Code</li>
+          <li className="hover:underline hover:cursor-pointer">Cookie Policy</li>
+          <li className="hover:underline hover:cursor-pointer">Privacy Policy</li>
+          <li className="hover:underline hover:cursor-pointer">Licensing</li>
+        </ul>
+        <p className="text-center lg:text-start pb-5 text-sm ">
           © 2024 Purwa Grand Prix Engineering, Ltd. All Rights Reserved.
         </p>
       </div>
