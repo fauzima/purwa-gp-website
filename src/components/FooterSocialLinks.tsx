@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 export default function FooterSocialLinks() {
   return (
-    <div className="flex gap-3 items-center">
+    <div className="flex gap-5 md:gap-3 items-center">
       <Link
         className="group rounded-md ring-1 ring-slate-900/5 shadow-sm hover:shadow hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:hover:shadow-none hover:shadow-indigo-200 dark:hover:bg-indigo-300 dark:bg-slate-600/25 transition ease-in-out"
         href={"mailto:partnerships@purwa.gp"}

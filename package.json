@@ -10,7 +10,11 @@
   },
   "dependencies": {
     "@types/aos": "^3.0.7",
+    "@types/contentful-resolve-response": "^0.1.33",
+    "@types/dateformat": "^5.0.2",
     "aos": "^2.3.4",
+    "contentful-resolve-response": "^1.9.0",
+    "dateformat": "^5.0.3",
     "dotenv": "^16.4.5",
     "next": "14.2.16",
     "next-themes": "^0.4.3",

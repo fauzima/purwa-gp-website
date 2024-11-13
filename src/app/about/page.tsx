@@ -1,9 +1,11 @@
+import AboutHeader from "@/components/AboutHeader";
+
 export default function AboutPage() {
     return (
-      <div className=" max-w-screen-xl mx-auto ">
-        <div className="container text-justify mx-auto p-5">
-        </div>
+      <div className="flex flex-col mt-[60px]">
+        <AboutHeader />
       </div>
+
     );
   }
   

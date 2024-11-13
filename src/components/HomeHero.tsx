@@ -6,14 +6,13 @@ import { useEffect } from "react";
 import { IoMdArrowDown } from "react-icons/io";
 import Hero from "../public/1.jpg";
 
-export default function HeroHomePage() {
+export default function HomeHero() {
   useEffect(() => {
     AOS.init();
   }, []);
   return (
     <div
       data-aos="zoom-in"
-      data-aos-duration="1500"
       data-aos-once="true"
       className="flex flex-col lg:flex-row-reverse mb-[10vh] lg:mb-[20vh]"
     >

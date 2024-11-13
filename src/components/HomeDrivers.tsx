@@ -4,29 +4,25 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Image from "next/image";
 import Driver from "../public/Driver.png";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 
-export default function OurDriverHomePage() {
+export default function HomeDrivers() {
   useEffect(() => {
     AOS.init();
   }, []);
   return (
     <div className="max-w-screen-2xl mx-auto w-full mb-[10vh] lg:mb-[20vh] px-4 sm:px-8 flex flex-col text-4xl md:text-6xl">
-      <div
-        data-aos="fade-right"
-        data-aos-duration="1500"
-        data-aos-once="true"
-        className="mb-[10vh]"
-      >
+      <div data-aos="fade-right" data-aos-once="true" className="mb-[10vh]">
         <h1 className="font-semibold mb-2 lg:mb-4 text-sky-700 dark:text-slate-100">
           OUR 2024
         </h1>
-        <h1 className="font-light mb-2 lg:mb-4 dark:text-sky-300">
+        <h1 className="font-light dark:text-sky-300">
           F1 DRIVER LINE-UP
         </h1>
       </div>
       <div
         data-aos="fade-right"
-        data-aos-duration="1500"
         data-aos-once="true"
         className="flex flex-col md:flex-row gap-5"
       >
@@ -51,6 +47,15 @@ export default function OurDriverHomePage() {
           </div>
         </div>
       </div>
+      <Link
+        data-aos="fade-right"
+        data-aos-once="true"
+        href={"/team"}
+        className="flex w-fit mt-10 mx-auto p-5 h-9 items-center text-base text-slate-100 rounded ring-1 shadow shadow-indigo-200 ring-slate-900/10 dark:ring-0 dark:shadow-none dark:hover:shadow-none hover:bg-indigo-500 bg-sky-500 transition ease-in-out"
+      >
+        <h3>Meet the full team</h3>
+        <FaArrowRight className="w-4 h-4 ml-2" />
+      </Link>
     </div>
   );
 }

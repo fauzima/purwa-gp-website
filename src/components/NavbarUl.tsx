@@ -25,8 +25,8 @@ export default function NavbarUl() {
               href={item.href}
               className={classNames(
                 isActive
-                  ? "w-24 h-9 flex items-center justify-center text-sky-600 rounded-md ring-1 ring-slate-900/5 shadow-sm hover:shadow hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:hover:shadow-none hover:shadow-indigo-200 bg-white/50 dark:bg-sky-600/25 transition ease-in-out"
-                  : "w-24 h-9 flex items-center justify-center hover:text-sky-700 dark:hover:text-sky-300 rounded-md ring-1 shadow shadow-indigo-200 ring-slate-900/10 dark:ring-0 dark:shadow-none dark:hover:shadow-none dark:hover:bg-indigo-500 bg-white/25 hover:bg-white/50 dark:bg-slate-600/25 transition ease-in-out"
+                  ? "w-24 h-9 flex items-center justify-center text-sky-600 dark:text-sky-400 rounded ring-1 ring-slate-900/5 shadow-sm hover:shadow hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:hover:shadow-none hover:shadow-indigo-200 bg-white/50 dark:bg-sky-600/25 transition ease-in-out"
+                  : "w-24 h-9 flex items-center justify-center hover:text-sky-700 dark:hover:text-sky-300 rounded ring-1 shadow shadow-indigo-200 ring-slate-900/10 dark:ring-0 dark:shadow-none dark:hover:shadow-none dark:hover:bg-indigo-500 bg-white/25 hover:bg-white/50 dark:bg-slate-600/25 transition ease-in-out"
               )}
             >
               <h3>{item.name}</h3>
