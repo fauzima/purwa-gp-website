@@ -2,6 +2,10 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 import Image from "next/image";
 import Driver from "../public/Driver.png";
 
@@ -17,7 +21,7 @@ export default function TeamDrivers() {
       <div
         data-aos="fade-right"
         data-aos-once="true"
-        className="flex flex-col md:flex-row gap-5"
+        className="hidden md:flex flex-row gap-5 mb-[5vh]"
       >
         <div className="group relative w-full aspect-[3_/_4] bg-teal-500/75 hover:bg-teal-500 overflow-hidden transition ease-in-out duration-300 text-slate-100">
           <Image
@@ -39,6 +43,45 @@ export default function TeamDrivers() {
             DRIVER 2
           </div>
         </div>
+      </div>
+      <div className="block md:hidden mb-[5vh] w-full">
+        <Swiper
+          data-aos="fade-right"
+          data-aos-once="true"
+          slidesPerView={1.5}
+          spaceBetween={20}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="group relative w-full aspect-[3_/_4] bg-teal-500/75 hover:bg-teal-500 overflow-hidden transition ease-in-out duration-300 text-slate-100">
+              <Image
+                className="h-full w-full object-cover object-center group-hover:scale-105 transition ease-in-out brightness-90 group-hover:brightness-100"
+                src={Driver}
+                alt="Driver"
+              />
+              <div className="px-5 py-3 absolute bottom-0 left-0 font-semibold">
+                DRIVER 1
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <div className="group relative w-full aspect-[3_/_4] bg-sky-500/75 hover:bg-sky-500 overflow-hidden transition ease-in-out duration-300 scale-x-[-1] text-slate-100">
+              <Image
+                className="h-full w-full object-cover object-center group-hover:scale-105 transition ease-in-out brightness-90 group-hover:brightness-100"
+                src={Driver}
+                alt="Driver"
+              />
+              <div className="px-5 py-3 absolute bottom-0 right-0 font-semibold scale-x-[-1]">
+                DRIVER 2
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );
