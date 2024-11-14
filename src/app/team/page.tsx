@@ -1,9 +1,11 @@
+import CarHero from "@/components/CarHero";
+import TeamDrivers from "@/components/TeamDrivers";
+
 export default function TeamPage() {
-    return (
-      <div className="max-w-screen-xl mx-auto ">
-        <div className="container text-justify mx-auto p-5">
-        </div>
-      </div>
-    );
-  }
-  
+  return (
+    <div className="flex flex-col">
+      <CarHero />
+      <TeamDrivers />
+    </div>
+  );
+}

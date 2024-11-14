@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import Image from "next/image";
 import { useEffect } from "react";
 import { IoMdArrowDown } from "react-icons/io";
-import Hero from "../public/1.jpg";
+import Hero from "../public/1.png";
 
 export default function HomeHero() {
   useEffect(() => {

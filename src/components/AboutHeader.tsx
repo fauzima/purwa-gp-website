@@ -7,6 +7,7 @@ export default function AboutHeader() {
       <div className="h-[40vh] w-full bg-slate-100 dark:bg-black overflow-hidden mb-[5vh]">
         <Image
           src={Trophies}
+          priority
           alt="Trophies"
           className="h-full w-full object-cover object-center"
         />

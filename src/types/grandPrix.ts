@@ -14,8 +14,8 @@ export interface IGP {
     raceStart: string;
     raceEnd: string;
     firstGp: string;
-    laps: string;
-    circuitLength: string;
+    laps: number;
+    circuitLength: number;
     thumbnail: {
       fields: {
         file: {

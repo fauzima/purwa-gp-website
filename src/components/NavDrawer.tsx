@@ -20,7 +20,7 @@ export default function NavDrawer({
         className={`${isOpen ? "block" : "hidden"} fixed inset-0 z-40 bg-black/20 backdrop-blur-sm dark:bg-slate-900/80`}
       ></div>
       <div
-        className={`fixed top-0 -left-80 z-50 w-80 max-w-[calc(100%-3rem)] h-screen p-10 overflow-y-hidden transition-transform ${isOpen ? "translate-x-full" : "-translate-x-full"} duration-1000 bg-white/75 dark:bg-slate-800/75`}
+        className={`fixed top-0 -left-80 z-50 w-80 max-w-[calc(100%-3rem)] h-screen p-10 overflow-y-hidden transition-transform ${isOpen ? "translate-x-full" : "-translate-x-full"} duration-1000 bg-white/85 dark:bg-slate-800/75`}
       >
         <div className="relative">
           <div

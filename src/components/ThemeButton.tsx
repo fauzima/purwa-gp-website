@@ -22,7 +22,7 @@ export default function ThemeButton() {
       ) : (
         <MdLightMode className="h-7 w-7 p-1 fill-sky-400 group-hover:fill-sky-500 dark:fill-sky-300" />
       )}
-      <h3 className="pl-2 pb-[2px] text-sm">Theme</h3>
+      <h3 className="pl-2 text-sm">Theme</h3>
     </button>
   );
 }

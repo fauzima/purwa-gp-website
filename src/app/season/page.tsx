@@ -37,6 +37,7 @@ export default async function SeasonPage() {
               <div className="w-full aspect-square bg-slate-100 dark:bg-black overflow-hidden brightness-75 hover:brightness-100 transition ease-in-out duration-300">
                 <Image
                   className="h-full w-full object-cover object-center hover:scale-110 transition-transform ease-in-out"
+                  priority
                   src={`https:${item.fields.thumbnail.fields.file.url}`}
                   width={1024}
                   height={1024}
