@@ -34,7 +34,9 @@ export default function RnD() {
   return (
     <div className="max-w-screen-2xl mx-auto w-full mb-[10vh] lg:mb-[20vh] px-4 sm:px-8 flex flex-col text-4xl md:text-6xl">
       <div data-aos="fade-right" data-aos-once="true" className="mb-[5vh]">
-        <h1 className="font-light dark:text-sky-300">RESEARCH AND DEVELOPMENT DRIVERS</h1>
+        <h1 className="font-light dark:text-sky-300">
+          RESEARCH AND DEVELOPMENT DRIVERS
+        </h1>
       </div>
       <div className="hidden md:flex flex-wrap content-start gap-6 mb-[5vh]">
         {loading

@@ -17,7 +17,7 @@ export default async function UpNextCard() {
         const raceStart: Date = new Date(item.fields.raceStart);
         return (
           <Link
-            href={`/race/${item.fields.slug}`}
+            href={`/race/2024/${item.fields.slug}`}
             key={idx}
             className="flex flex-col text-2xl w-full md:w-[calc(50%-12px)] xl:w-[calc(33.33%-16px)]"
           >

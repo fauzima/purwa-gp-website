@@ -13,6 +13,21 @@ export const generateStaticParams = async () => {
   }));
 };
 
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  const data: IGP = await getGPSlug(params.slug);
+  return {
+    title: data.fields.title,
+    describe: `Purwa GP | ${data.fields.title}`,
+    openGraph: {
+      images: [`https:${data.fields.thumbnail.fields.file.url}`],
+    },
+  };
+}
+
 export default async function GrandPrixPage({
   params,
 }: {
@@ -42,7 +57,7 @@ export default async function GrandPrixPage({
             {item.fields.title}
           </h1>
           <h1 className="font-light mb-2 lg:mb-4 dark:text-sky-300">
-            ROUND {item.fields.round}
+            2024 | ROUND {item.fields.round}
           </h1>
           <IoMdArrowDown className="sm:absolute sm:bottom-0 text-8xl sm:text-[150px] text-teal-500" />
         </div>

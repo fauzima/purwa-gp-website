@@ -3,11 +3,17 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ThemeContextProvider from "@/helpers/ThemeContext";
 import Footer from "@/components/Footer";
+import Thumbnail from "../public/Purwa.png"
 // import HeaderImage from "@/components/HeaderImage";
 
 export const metadata: Metadata = {
-  title: "Purwa GP Formula One Team",
+  title: { template: "%s", default: "Purwa GP Formula One Team" },
   description: "Purwa Grand Prix Engineering Formula One Team",
+  openGraph: {
+    images: [
+      `${Thumbnail}`,
+    ],
+  },
 };
 
 export default function RootLayout({
