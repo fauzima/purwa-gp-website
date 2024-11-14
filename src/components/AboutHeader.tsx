@@ -1,9 +1,19 @@
+"use client";
 import Image from "next/image";
 import Trophies from "../public/Trophies.jpg";
+import { useEffect } from "react";
+import Aos from "aos";
 
 export default function AboutHeader() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <div className="flex flex-col text-slate-700 dark:text-slate-300 text-xl mb-[10vh]">
+    <div
+      data-aos="zoom-in"
+      data-aos-once="true"
+      className="flex flex-col text-slate-700 dark:text-slate-300 text-xl mb-[10vh]"
+    >
       <div className="h-[40vh] w-full bg-slate-100 dark:bg-black overflow-hidden mb-[5vh]">
         <Image
           src={Trophies}

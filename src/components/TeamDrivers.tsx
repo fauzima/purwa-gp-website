@@ -18,13 +18,11 @@ export default function TeamDrivers() {
       <div data-aos="fade-right" data-aos-once="true" className="mb-[5vh]">
         <h1 className="font-light dark:text-sky-300">DRIVERS</h1>
       </div>
-      <div
-        data-aos="fade-right"
-        data-aos-once="true"
-        className="hidden md:flex flex-row gap-5 mb-[5vh]"
-      >
+      <div className="hidden md:flex flex-row gap-5 mb-[5vh]">
         <div className="group relative w-full aspect-[3_/_4] bg-teal-500/75 hover:bg-teal-500 overflow-hidden transition ease-in-out duration-300 text-slate-100">
           <Image
+            data-aos="fade-left"
+            data-aos-once="true"
             className="h-full w-full object-cover object-center group-hover:scale-105 transition ease-in-out brightness-90 group-hover:brightness-100"
             src={Driver}
             alt="Driver"
@@ -35,6 +33,8 @@ export default function TeamDrivers() {
         </div>
         <div className="group relative w-full aspect-[3_/_4] bg-sky-500/75 hover:bg-sky-500 overflow-hidden transition ease-in-out duration-300 scale-x-[-1] text-slate-100">
           <Image
+            data-aos="fade-left"
+            data-aos-once="true"
             className="h-full w-full object-cover object-center group-hover:scale-105 transition ease-in-out brightness-90 group-hover:brightness-100"
             src={Driver}
             alt="Driver"

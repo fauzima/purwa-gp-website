@@ -32,7 +32,7 @@ export default function Management() {
     AOS.init();
   }, []);
   return (
-    <div className="max-w-screen-2xl mx-auto w-full mb-[10vh] lg:mb-[20vh] px-4 sm:px-8 flex flex-col text-4xl md:text-6xl">
+    <div className="max-w-screen-2xl mx-auto w-full mb-[10vh] lg:mb-[20vh] px-4 sm:px-8 flex flex-col text-4xl sm:text-5xl">
       <div data-aos="fade-right" data-aos-once="true" className="mb-[5vh]">
         <h1 className="font-light dark:text-sky-300">MANAGEMENT</h1>
       </div>
@@ -41,13 +41,13 @@ export default function Management() {
           ? Array.from({ length: 8 }).map((_, idx) => (
               <div
                 key={idx}
-                className="group relative w-full md:w-[calc(50%-12px)] xl:w-[calc(33.33%-16px)] aspect-[3_/_4] bg-teal-500/75 hover:bg-teal-500 overflow-hidden transition ease-in-out duration-300 text-slate-100"
+                className="group relative w-full md:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] xl:w-[calc(25%-18px)] aspect-[3_/_4] bg-teal-500/75 hover:bg-teal-500 overflow-hidden transition ease-in-out duration-300 text-slate-100"
               ></div>
             ))
           : teams.map((item, idx) => (
               <div
                 key={idx}
-                className="group relative w-full md:w-[calc(50%-12px)] xl:w-[calc(33.33%-16px)] aspect-[3_/_4] overflow-hidden transition ease-in-out duration-300 text-slate-100"
+                className="group relative w-full md:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] xl:w-[calc(25%-18px)] aspect-[3_/_4] overflow-hidden transition ease-in-out duration-300 text-slate-100"
               >
                 <Image
                   data-aos="fade-right"

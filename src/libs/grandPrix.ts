@@ -7,7 +7,7 @@ const token = process.env.CONTENTFUL_TOKEN;
 export const getGP = async () => {
   const res = await fetch(
     `${base_url}/spaces/${space_id}/environments/master/entries?access_token=${token}&content_type=grandPrix&order=fields.round`,
-    { next: { revalidate: 3600 } }
+    { next: { revalidate: 0 } }
   );
   const data = await res.json();
   const result = resolveResponse(data);
@@ -17,7 +17,7 @@ export const getGP = async () => {
 export const getGPSlug = async (slug: string) => {
   const res = await fetch(
     `${base_url}/spaces/${space_id}/environments/master/entries?access_token=${token}&content_type=grandPrix&fields.slug=${slug}`,
-    { next: { revalidate: 3600 } }
+    { next: { revalidate: 0 } }
   );
   const data = await res.json();
   const result = resolveResponse(data);

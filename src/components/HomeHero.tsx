@@ -14,7 +14,7 @@ export default function HomeHero() {
     <div
       data-aos="zoom-in"
       data-aos-once="true"
-      className="flex flex-col lg:flex-row-reverse mb-[10vh] lg:mb-[20vh]"
+      className="flex flex-col lg:flex-row-reverse mb-[15vh] lg:mb-[20vh]"
     >
       <div className="w-full lg:w-1/2 lg:max-h-[80vh] aspect-[4_/_3] sm:aspect-video lg:aspect-square bg-slate-100 dark:bg-black overflow-hidden">
         <Image

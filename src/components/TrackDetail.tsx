@@ -9,16 +9,16 @@ export default async function TrackDetail({
 }) {
   const item: IGP = await getGPSlug(params.slug);
   return (
-    <div className="flex flex-col bg-slate-200 dark:bg-slate-500/50 p-4 rounded-md lg:w-[calc(50%-12px)] lg:h-1/2 xl:w-[calc(60%-12px)]">
+    <div className="flex flex-col bg-slate-200 dark:bg-slate-500/50 p-4 rounded-md lg:w-[calc(50%-12px)] xl:w-[calc(60%-12px)]">
       <Image
-        className=""
+        className="mt-9"
         priority
         src={`https:${item.fields.circuitLayout.fields.file.url}`}
         width={2048}
         height={2048}
         alt={item.fields.slug}
       />
-      <div className="pt-4 flex flex-wrap justify-center text-lg gap-2">
+      <div className="pt-8 flex flex-wrap justify-center text-base sm:text-lg lg:text-base xl:text-lg gap-2">
         <p>First GP: {item.fields.firstGp} |</p>
         <p>Laps: {item.fields.laps} |</p>
         <p>Circuit Length: {item.fields.circuitLength.toFixed(3)} km |</p>

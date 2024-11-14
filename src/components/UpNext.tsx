@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function UpNext() {
   return (
-    <div className="max-w-screen-2xl mx-auto w-full mb-[10vh] lg:mb-[20vh]">
+    <div className="max-w-screen-2xl mx-auto w-full mb-[15vh] lg:mb-[20vh]">
       <div className="flex flex-col">
         <div
           data-aos="fade-right"
@@ -21,6 +21,7 @@ export default function UpNext() {
         <Link
           data-aos="fade-right"
           data-aos-once="true"
+          data-aos-offset="0"
           href={"/season"}
           className="flex w-fit mt-10 mx-auto p-5 h-9 items-center text-base text-slate-100 rounded ring-1 shadow shadow-indigo-200 ring-slate-900/10 dark:ring-0 dark:shadow-none dark:hover:shadow-none hover:bg-indigo-500 bg-sky-500 transition ease-in-out"
         >

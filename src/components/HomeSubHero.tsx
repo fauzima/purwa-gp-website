@@ -13,7 +13,7 @@ export default function HomeSubHero() {
     <div
       data-aos="fade-right"
       data-aos-once="true"
-      className="max-w-screen-2xl mx-auto w-full mb-[10vh] lg:mb-[20vh] px-4 sm:px-8 text-xl text-slate-700 dark:text-slate-300"
+      className="max-w-screen-2xl mx-auto w-full mb-[15vh] lg:mb-[20vh] px-4 sm:px-8 text-xl text-slate-700 dark:text-slate-300"
     >
       <div className="flex flex-col gap-10">
         <p className="font-semibold">

@@ -39,8 +39,8 @@ export default async function SeasonPage() {
                   className="h-full w-full object-cover object-center hover:scale-110 transition-transform ease-in-out"
                   priority
                   src={`https:${item.fields.thumbnail.fields.file.url}`}
-                  width={1024}
-                  height={1024}
+                  width={512}
+                  height={512}
                   alt="Thumbnail"
                 />
               </div>

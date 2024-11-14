@@ -3,7 +3,6 @@ import { IGP } from "@/types/grandPrix";
 import Image from "next/image";
 import { IoMdArrowDown } from "react-icons/io";
 import ScheduleTable from "@/components/ScheduleTable";
-import dateFormat from "dateformat";
 import TrackDetail from "@/components/TrackDetail";
 
 export const generateStaticParams = async () => {
@@ -34,7 +33,7 @@ export default async function GrandPrixPage({
   params: { slug: string };
 }) {
   const item: IGP = await getGPSlug(params.slug);
-  const now: Date = new Date();
+  const now: string = Intl.DateTimeFormat().resolvedOptions().timeZone
   return (
     <div className="flex flex-col mt-[60px]">
       <div
@@ -69,10 +68,10 @@ export default async function GrandPrixPage({
           </h1>
           <h1 className="font-light dark:text-sky-300">DETAILS</h1>
           <h2 className="text-xl">
-            Your Local Time (GMT{dateFormat(now, "p")})
+            Your Local Time ({now} time zone)
           </h2>
         </div>
-        <div className="flex flex-col lg:flex-row-reverse gap-6">
+        <div className="flex flex-col lg:flex-row gap-6">
           <ScheduleTable params={params} />
           <TrackDetail params={params} />
         </div>
