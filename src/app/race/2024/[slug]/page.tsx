@@ -34,7 +34,6 @@ export default async function GrandPrixPage({
   params: { slug: string };
 }) {
   const item: IGP = await getGPSlug(params.slug);
-  const now: string = new Date().toISOString()
   return (
     <div className="flex flex-col mt-[60px]">
       <div
@@ -69,7 +68,7 @@ export default async function GrandPrixPage({
           </h1>
           <h1 className="font-light dark:text-sky-300">DETAILS</h1>
           <h2 className="text-xl">
-            Your Local Time (<TimeZone date={now}/>)
+            Your Local Time (<TimeZone />)
           </h2>
         </div>
         <div className="flex flex-col lg:flex-row gap-10">
