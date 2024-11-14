@@ -41,7 +41,7 @@ export default function CarHero() {
         </h1>
         <h1 className="text-2xl md:text-4xl font-semibold text-sky-700 dark:text-slate-100 flex flex-wrap justify-center gap-2 lg:gap-3">
           <p>900 BHP |</p>
-          <p>1600 CC |</p>
+          <p>1.6L V6 TURBO |</p>
           <p>798 KG |</p>
           <p>8 GEARS</p>
         </h1>

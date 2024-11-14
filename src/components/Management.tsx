@@ -15,7 +15,9 @@ export default function Management() {
 
   const fetchTeams = async () => {
     try {
-      const response = await fetch("https://randomuser.me/api/?results=8");
+      const response = await fetch(
+        "https://randomuser.me/api/?results=5&gender=male&nat=au,ca,ch,de,dk,fi,fr,gb,ie,nl,no,nz,us"
+      );
       const data = await response.json();
       setTeams(data.results);
       setLoading(false);
@@ -38,10 +40,10 @@ export default function Management() {
       </div>
       <div className="hidden md:flex flex-wrap content-start gap-6 mb-[5vh]">
         {loading
-          ? Array.from({ length: 8 }).map((_, idx) => (
+          ? Array.from({ length: 5 }).map((_, idx) => (
               <div
                 key={idx}
-                className="group relative w-full md:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] xl:w-[calc(25%-18px)] aspect-[3_/_4] bg-teal-500/75 hover:bg-teal-500 overflow-hidden transition ease-in-out duration-300 text-slate-100"
+                className="group relative w-full md:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] xl:w-[calc(25%-18px)] aspect-[3_/_4] bg-teal-500/75 hover:bg-teal-500 text-slate-100"
               ></div>
             ))
           : teams.map((item, idx) => (
@@ -52,8 +54,8 @@ export default function Management() {
                 <Image
                   data-aos="fade-right"
                   data-aos-once="true"
-                  className="h-full w-full object-cover object-center group-hover:scale-105 transition ease-in-out brightness-90 group-hover:brightness-100"
-                  src={item.picture.large}
+                  className="h-full w-full object-cover object-center brightness-90 group-hover:brightness-100 transition ease-in-out duration-300"
+                  src={`https://i.pravatar.cc/1000?img=${11 + idx}`}
                   alt={`${item.name.first} ${item.name.last}`}
                   width={1024}
                   height={1024}
@@ -79,15 +81,15 @@ export default function Management() {
           {loading
             ? Array.from({ length: 8 }).map((_, idx) => (
                 <SwiperSlide key={idx}>
-                  <div className="group relative w-full aspect-[3_/_4] bg-teal-500/75 hover:bg-teal-500 overflow-hidden transition ease-in-out duration-300 text-slate-100"></div>
+                  <div className="group relative w-full aspect-[3_/_4] bg-teal-500/75 hover:bg-teal-500 overflow-hidden text-slate-100"></div>
                 </SwiperSlide>
               ))
             : teams.map((item, idx) => (
                 <SwiperSlide key={idx}>
                   <div className="group relative w-full aspect-[3_/_4] overflow-hidden transition ease-in-out duration-300 text-slate-100">
                     <Image
-                      className="h-full w-full object-cover object-center group-hover:scale-105 transition ease-in-out brightness-90 group-hover:brightness-100"
-                      src={item.picture.large}
+                      className="h-full w-full object-cover object-center brightness-90 group-hover:scale-105 group-hover:brightness-100 transition ease-in-out duration-300"
+                      src={`https://i.pravatar.cc/1000?img=${11 + idx}`}
                       alt={`${item.name.first} ${item.name.last}`}
                       width={1024}
                       height={1024}
