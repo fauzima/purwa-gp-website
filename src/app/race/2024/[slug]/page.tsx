@@ -71,7 +71,7 @@ export default async function GrandPrixPage({
             Your Local Time ({now} time zone)
           </h2>
         </div>
-        <div className="flex flex-col lg:flex-row gap-6">
+        <div className="flex flex-col lg:flex-row gap-10">
           <ScheduleTable params={params} />
           <TrackDetail params={params} />
         </div>

@@ -9,7 +9,7 @@ export default async function TrackDetail({
 }) {
   const item: IGP = await getGPSlug(params.slug);
   return (
-    <div className="flex flex-col bg-slate-200 dark:bg-slate-500/50 p-4 rounded-md lg:w-[calc(50%-12px)] xl:w-[calc(60%-12px)]">
+    <div className="flex flex-col bg-slate-200 dark:bg-slate-500/50 p-4 rounded-md lg:w-[calc(50%-20px)] xl:w-[calc(60%-20px)]">
       <Image
         className="mt-9"
         priority

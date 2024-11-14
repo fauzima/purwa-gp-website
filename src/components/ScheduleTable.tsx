@@ -19,7 +19,7 @@ export default async function ScheduleTable({
   const raceStart: Date = new Date(item.fields.raceStart);
   const raceEnd: Date = new Date(item.fields.raceEnd);
   return (
-    <table className="mb-[5vh] lg:w-[calc(50%-12px)] lg:h-1/2 text-sm xl:w-[calc(40%-12px)]">
+    <table className="mb-[5vh] lg:w-[calc(50%-20px)] lg:h-1/2 text-sm xl:w-[calc(40%-20px)]">
       <tr className="border border-slate-500">
         <td className="p-5 w-[33.33%] font-semibold">FP1</td>
         <td className=" w-[33.33%] text-center">
