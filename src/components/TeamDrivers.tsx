@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import Image from "next/image";
 import Driver from "../public/Driver.png";
+import DriverFlipped from "../public/DriverFlipped.png";
 
 export default function TeamDrivers() {
   useEffect(() => {
@@ -19,10 +20,12 @@ export default function TeamDrivers() {
         <h1 className="font-light dark:text-sky-300">DRIVERS</h1>
       </div>
       <div className="hidden md:flex flex-row gap-5 mb-[5vh]">
-        <div className="group relative w-full aspect-[3_/_4] bg-teal-500/75 hover:bg-teal-500 overflow-hidden transition ease-in-out duration-300 text-slate-100">
+        <div
+          data-aos="fade-right"
+          data-aos-once="true"
+          className="group relative w-full aspect-[3_/_4] bg-teal-500/75 hover:bg-teal-500 overflow-hidden transition ease-in-out duration-300 text-slate-100"
+        >
           <Image
-            data-aos="fade-left"
-            data-aos-once="true"
             className="h-full w-full object-cover object-center group-hover:scale-105 transition ease-in-out brightness-90 group-hover:brightness-100"
             src={Driver}
             alt="Driver"
@@ -31,15 +34,17 @@ export default function TeamDrivers() {
             DRIVER 1
           </div>
         </div>
-        <div className="group relative w-full aspect-[3_/_4] bg-sky-500/75 hover:bg-sky-500 overflow-hidden transition ease-in-out duration-300 scale-x-[-1] text-slate-100">
+        <div
+          data-aos="fade-left"
+          data-aos-once="true"
+          className="group relative w-full aspect-[3_/_4] bg-sky-500/75 hover:bg-sky-500 overflow-hidden transition ease-in-out duration-300 text-slate-100"
+        >
           <Image
-            data-aos="fade-left"
-            data-aos-once="true"
             className="h-full w-full object-cover object-center group-hover:scale-105 transition ease-in-out brightness-90 group-hover:brightness-100"
-            src={Driver}
+            src={DriverFlipped}
             alt="Driver"
           />
-          <div className="px-5 py-3 absolute bottom-0 right-0 font-semibold scale-x-[-1]">
+          <div className="px-5 py-3 absolute bottom-0 left-0 font-semibold">
             DRIVER 2
           </div>
         </div>

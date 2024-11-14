@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Image from "next/image";
 import Driver from "../public/Driver.png";
+import DriverFlipped from "../public/DriverFlipped.png";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -20,10 +21,12 @@ export default function HomeDrivers() {
         <h1 className="font-light dark:text-sky-300">F1 DRIVER LINE-UP</h1>
       </div>
       <div className="flex flex-col md:flex-row gap-5">
-        <div className="group relative w-full aspect-[3_/_4] bg-teal-500/75 hover:bg-teal-500 overflow-hidden transition ease-in-out duration-300 text-slate-100">
+        <div
+          data-aos="fade-right"
+          data-aos-once="true"
+          className="group relative w-full aspect-[3_/_4] bg-teal-500/75 hover:bg-teal-500 overflow-hidden transition ease-in-out duration-300 text-slate-100"
+        >
           <Image
-            data-aos="fade-right"
-            data-aos-once="true"
             className="h-full w-full object-cover object-center group-hover:scale-105 transition ease-in-out brightness-90 group-hover:brightness-100"
             src={Driver}
             alt="Driver"
@@ -32,15 +35,17 @@ export default function HomeDrivers() {
             DRIVER 1
           </div>
         </div>
-        <div className="group relative w-full aspect-[3_/_4] bg-sky-500/75 hover:bg-sky-500 overflow-hidden transition ease-in-out duration-300 scale-x-[-1] text-slate-100">
+        <div
+          data-aos="fade-left"
+          data-aos-once="true"
+          className="group relative w-full aspect-[3_/_4] bg-sky-500/75 hover:bg-sky-500 overflow-hidden transition ease-in-out duration-300 text-slate-100"
+        >
           <Image
-            data-aos="fade-right"
-            data-aos-once="true"
             className="h-full w-full object-cover object-center group-hover:scale-105 transition ease-in-out brightness-90 group-hover:brightness-100"
-            src={Driver}
+            src={DriverFlipped}
             alt="Driver"
           />
-          <div className="px-5 py-3 absolute bottom-0 right-0 font-semibold scale-x-[-1]">
+          <div className="px-5 py-3 absolute bottom-0 left-0 font-semibold">
             DRIVER 2
           </div>
         </div>

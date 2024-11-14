@@ -61,21 +61,28 @@ export default async function GrandPrixPage({
           <IoMdArrowDown className="sm:absolute sm:bottom-0 text-8xl sm:text-[150px] text-teal-500" />
         </div>
       </div>
-      <div className="max-w-screen-2xl mx-auto w-full px-4 sm:px-8 flex flex-col mb-[10vh]">
-        <div className="flex flex-col gap-2 text-4xl mb-[5vh]">
-          <h1 className="font-semibold text-sky-700 dark:text-slate-100">
-            RACE WEEKEND
-          </h1>
-          <h1 className="font-light dark:text-sky-300">DETAILS</h1>
-          <h2 className="text-xl">
-            Your Local Time (<TimeZone />)
-          </h2>
-        </div>
-        <div className="flex flex-col lg:flex-row gap-10">
+      <div className="max-w-screen-2xl w-full mx-auto px-4 sm:px-8 flex flex-col lg:flex-row gap-[5vh] lg:gap-10 mb-[10vh] lg:items-center">
+        <div className="flex flex-col lg:w-[calc(50%-20px)] gap-[5vh]">
+          <div className="flex flex-col text-4xl gap-2">
+            <h1 className="font-semibold text-sky-700 dark:text-slate-100">
+              RACE WEEKEND
+            </h1>
+            <h1 className="font-light dark:text-sky-300">DETAILS</h1>
+            <h2 className="text-xl">
+              Your Local Time (<TimeZone />)
+            </h2>
+          </div>
           <ScheduleTable params={params} />
-          <TrackDetail params={params} />
         </div>
+        <TrackDetail params={params} />
       </div>
     </div>
   );
+}
+
+{
+  /* <ScheduleTable params={params} /> */
+}
+{
+  /* <TrackDetail params={params} /> */
 }
