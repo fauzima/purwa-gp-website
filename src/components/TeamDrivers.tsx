@@ -35,7 +35,7 @@ export default function TeamDrivers() {
           </div>
         </div>
         <div
-          data-aos="fade-left"
+          data-aos="fade-right"
           data-aos-once="true"
           className="group relative w-full aspect-[3_/_4] bg-sky-500/75 hover:bg-sky-500 overflow-hidden transition ease-in-out duration-300 text-slate-100"
         >

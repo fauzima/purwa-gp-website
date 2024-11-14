@@ -30,7 +30,7 @@ export default function Navbar() {
               className="group text-teal-400/75 hover:text-teal-500 transition ease-in-out mx-auto lg:mr-[122.367px] lg:mx-0 flex gap-[2px] items-center font-jost text-lg font-bold"
             >
               <PurwaLogo className="h-6 w-6 fill-sky-400/75 group-hover:fill-sky-500 transition ease-in-out" />
-              <p className="italic">
+              <p className="italic font-jost">
                 <span className="not-italic text-2xl font-medium text-slate-900 dark:text-slate-100">
                   PURWA
                 </span>

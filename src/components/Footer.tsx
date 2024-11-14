@@ -16,7 +16,7 @@ export default function Footer() {
             <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-3 pt-5 lg:pt-8 pb-5 mx-auto lg:mx-0">
               <div className="text-teal-500 transition ease-in-out  mr-3 flex gap-[2px] items-center font-jost text-lg font-bold">
                 <PurwaLogo className="h-6 w-6 fill-sky-500 transition ease-in-out" />
-                <p className="italic">
+                <p className="italic font-jost">
                   <span className="not-italic text-2xl font-medium text-slate-900 dark:text-slate-100">
                     PURWA
                   </span>
