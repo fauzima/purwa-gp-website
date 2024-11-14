@@ -1,6 +1,5 @@
 import { getGPSlug } from "@/libs/grandPrix";
 import { IGP } from "@/types/grandPrix";
-import dateFormat from "dateformat";
 import LocalTime from "./localTime";
 import LocalDate from "./localDate";
 
