@@ -22,47 +22,47 @@ export default async function ScheduleTable({
   return (
     <table className="lg:h-1/2 text-sm">
       <tr className="border border-slate-500">
-        <td className="p-4 sm:p-5 w-[33.33%] font-semibold">FP1</td>
+        <td className="px-[6px] py-5 sm:p-5 w-[33.33%] font-semibold">FP1</td>
         <td className=" w-[33.33%] text-center">
           <LocalDate date={fp1Start} />
         </td>
-        <td className="p-4 sm:p-5 w-[33.33%] text-end font-semibold">
+        <td className="px-[6px] py-5 sm:p-5 w-[33.33%] text-end font-semibold">
           <LocalTime start={fp1Start} end={fp1End} />
         </td>
       </tr>
       <tr className="border border-slate-500">
-        <td className="p-4 sm:p-5 w-[33.33%] font-semibold">FP2</td>
+        <td className="px-[6px] py-5 sm:p-5 w-[33.33%] font-semibold">FP2</td>
         <td className=" w-[33.33%] text-center">
           <LocalDate date={fp2Start} />
         </td>
-        <td className="p-4 sm:p-5 w-[33.33%] text-end font-semibold">
+        <td className="px-[6px] py-5 sm:p-5 w-[33.33%] text-end font-semibold">
           <LocalTime start={fp2Start} end={fp2End} />
         </td>
       </tr>
       <tr className="border border-slate-500">
-        <td className="p-4 sm:p-5 w-[33.33%] font-semibold">FP3</td>
+        <td className="px-[6px] py-5 sm:p-5 w-[33.33%] font-semibold">FP3</td>
         <td className=" w-[33.33%] text-center">
           <LocalDate date={fp3Start} />
         </td>
-        <td className="p-4 sm:p-5 w-[33.33%] text-end font-semibold">
+        <td className="px-[6px] py-5 sm:p-5 w-[33.33%] text-end font-semibold">
           <LocalTime start={fp3Start} end={fp3End} />
         </td>
       </tr>
       <tr className="border border-slate-500">
-        <td className="p-4 sm:p-5 w-[33.33%] font-semibold">Qualifying</td>
+        <td className="px-[6px] py-5 sm:p-5 w-[33.33%] font-semibold">Qualifying</td>
         <td className=" w-[33.33%] text-center">
           <LocalDate date={qualiStart} />
         </td>
-        <td className="p-4 sm:p-5 w-[33.33%] text-end font-semibold">
+        <td className="px-[6px] py-5 sm:p-5 w-[33.33%] text-end font-semibold">
           <LocalTime start={qualiStart} end={qualiEnd} />
         </td>
       </tr>
       <tr className="border border-slate-500">
-        <td className="p-4 sm:p-5 w-[33.33%] font-semibold">Race</td>
+        <td className="px-[6px] py-5 sm:p-5 w-[33.33%] font-semibold">Race</td>
         <td className=" w-[33.33%] text-center">
           <LocalDate date={raceStart} />
         </td>
-        <td className="p-4 sm:p-5 w-[33.33%] text-end font-semibold">
+        <td className="px-[6px] py-5 sm:p-5 w-[33.33%] text-end font-semibold">
           <LocalTime start={raceStart} end={raceEnd} />
         </td>
       </tr>

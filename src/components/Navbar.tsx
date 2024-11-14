@@ -27,10 +27,10 @@ export default function Navbar() {
             </button>
             <Link
               href={"/"}
-              className="group text-teal-400/75 hover:text-teal-500 transition ease-in-out mx-auto lg:mr-[122.367px] lg:mx-0 flex gap-[2px] items-center font-jost text-lg font-bold"
+              className="group text-teal-400/75 hover:text-teal-500 transition ease-in-out mx-auto lg:mr-[122.367px] lg:mx-0 flex gap-[2px] items-center text-lg font-bold"
             >
               <PurwaLogo className="h-6 w-6 fill-sky-400/75 group-hover:fill-sky-500 transition ease-in-out" />
-              <p className="italic font-jost">
+              <p className="italic">
                 <span className="not-italic text-2xl font-medium text-slate-900 dark:text-slate-100">
                   PURWA
                 </span>

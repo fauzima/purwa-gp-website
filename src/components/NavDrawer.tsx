@@ -24,10 +24,10 @@ export default function NavDrawer({
       >
         <div className="relative">
           <div
-            className={`absolute flex gap-1 rotate-90 -top-[20%] -left-[85%] ${isOpen ? "translate-y-[150%]" : "-translate-y-[400%]"} text-teal-400/40 transition-transform duration-[1500ms] font-jost text-[80px] font-bold pointer-events-none items-center`}
+            className={`absolute flex gap-1 rotate-90 -top-[20%] -left-[85%] ${isOpen ? "translate-y-[150%]" : "-translate-y-[400%]"} text-teal-400/40 transition-transform duration-[1500ms] text-[80px] font-bold pointer-events-none items-center`}
           >
             <PurwaLogo className="w-[120px] h-[120px] fill-sky-400/25" />
-            <p className="italic font-jost">
+            <p className="italic">
               <span className="text-[120px] not-italic font-medium text-slate-500/25">
                 PURWA
               </span>
