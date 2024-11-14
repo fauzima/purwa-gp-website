@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Purwa Grand Prix Engineering Formula One Team",
   openGraph: {
     images: [
-      `https://drive.google.com/file/d/1rNB-AyeAtSoyTfMXokI5ED252vmsggFu/preview`,
+      `https://i.ibb.co.com/RDdZnBj/Purwa.png`,
     ],
   },
 };
