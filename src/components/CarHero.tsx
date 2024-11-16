@@ -20,13 +20,13 @@ export default function CarHero() {
               priority
               src={LG}
               alt="LG"
-              className="absolute -top-10 hidden lg:block"
+              className="absolute -top-10 hover:scale-110 transition-transform hidden lg:block"
             />
             <Image
               priority
               src={SM}
               alt="SM"
-              className="absolute top-[5vh] lg:hidden"
+              className="absolute hover:scale-110 transition-transform top-[5vh] lg:hidden"
             />
           </div>
         </div>
@@ -36,7 +36,7 @@ export default function CarHero() {
         data-aos-once="true"
         className="max-w-screen-2xl px-4 sm:px-8 mt-10 mb-[10vh] mx-auto text-center"
       >
-        <h1 className="mx-autp text-4xl md:text-6xl font-light mb-5 md:mb-[5vh] dark:text-sky-300">
+        <h1 className="mx-auto text-4xl md:text-6xl font-light mb-5 md:mb-[5vh] dark:text-sky-300">
           OUR 2024 CAR
         </h1>
         <h1 className="text-2xl md:text-4xl font-semibold text-sky-700 dark:text-slate-100 flex flex-wrap justify-center gap-2 lg:gap-3">

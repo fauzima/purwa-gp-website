@@ -19,18 +19,18 @@ export default async function UpNextCard() {
           <Link
             href={`/race/2024/${item.fields.slug}`}
             key={idx}
-            className="flex flex-col text-2xl w-full md:w-[calc(50%-12px)] xl:w-[calc(33.33%-16px)]"
+            className="group flex flex-col text-2xl w-full md:w-[calc(50%-12px)] xl:w-[calc(33.33%-16px)] bg-slate-500/15 dark:bg-slate-500/25 hover:bg-slate-500/25 dark:hover:bg-slate-500/50 transition ease-in-out duration-300"
           >
-            <div className="w-full aspect-square bg-slate-100 dark:bg-black overflow-hidden brightness-75 hover:brightness-100 transition ease-in-out duration-300">
+            <div className="w-full aspect-square bg-slate-100 dark:bg-black overflow-hidden brightness-75 group-hover:brightness-100 transition ease-in-out duration-300">
               <Image
-                className="h-full w-full object-cover object-center hover:scale-110 transition-transform ease-in-out"
+                className="h-full w-full object-cover object-center group-hover:scale-110 transition-transform ease-in-out"
                 src={`https:${item.fields.thumbnail.fields.file.url}`}
                 width={1024}
                 height={1024}
                 alt="Thumbnail"
               />
             </div>
-            <div className="mt-3">
+            <div className="px-4 py-3 uppercase">
               <h2 className="font-semibold text-sky-700 dark:text-slate-100">
                 {item.fields.title}
               </h2>

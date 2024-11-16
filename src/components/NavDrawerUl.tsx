@@ -46,8 +46,8 @@ export default function NavDrawerUl({
               <div
                 className={classNames(
                   isActive
-                    ? "mr-4 rounded-md ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none group-hover:shadow-sky-200 dark:group-hover:bg-sky-500 dark:bg-sky-500"
-                    : "mr-4 rounded-md ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none group-hover:shadow-indigo-200 dark:group-hover:bg-indigo-600 dark:bg-slate-700"
+                    ? "mr-4 rounded-sm ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none group-hover:shadow-sky-200 dark:group-hover:bg-sky-500 dark:bg-sky-500"
+                    : "mr-4 rounded-sm ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none group-hover:shadow-indigo-200 dark:group-hover:bg-indigo-600 dark:bg-slate-700"
                 )}
               >
                 <item.Icon

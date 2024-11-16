@@ -34,3 +34,11 @@ h3 {
     text-wrap: balance;
   }
 }
+
+.swiper-pagination-bullet {
+  background-color: #000 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: skyblue !important;
+}

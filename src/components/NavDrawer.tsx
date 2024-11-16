@@ -38,7 +38,7 @@ export default function NavDrawer({
             <button
               onClick={() => closeDrawer()}
               aria-label="Close navigation drawer button"
-              className="group absolute top-0 right-0 rounded-md ring-1 ring-slate-900/5 shadow-sm hover:shadow hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:hover:shadow-none hover:shadow-indigo-200 dark:hover:bg-indigo-600 dark:bg-slate-700 transition ease-in-out"
+              className="group absolute top-0 right-0 rounded-sm ring-1 ring-slate-900/5 shadow-sm hover:shadow hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:hover:shadow-none hover:shadow-indigo-200 dark:hover:bg-indigo-600 dark:bg-slate-700 transition ease-in-out"
             >
               <MdClose className="h-7 w-7 p-[2px] text-indigo-300 group-hover:text-indigo-400 dark:text-slate-300" />
             </button>

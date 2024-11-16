@@ -6,7 +6,7 @@ import FooterTexts from "./FooterTexts";
 
 export default function Footer() {
   return (
-    <footer className="relative w-full flex-none transition-colors supports-[backdrop-blur]:bg-white/60 dark:bg-transparent border-t text-slate-700 dark:text-slate-500 border-slate-900/10 dark:border-slate-300/10">
+    <footer className="relative w-full backdrop-blur flex-none transition-colors supports-[backdrop-blur]:bg-white/60 dark:bg-transparent border-t text-slate-700 dark:text-slate-500 border-slate-900/10 dark:border-slate-300/10">
       <div className="max-w-screen-2xl mx-auto">
         <div className="mx-auto px-3 sm:px-4 lg:px-5">
           <div className="flex flex-col">

@@ -51,7 +51,7 @@ export default async function GrandPrixPage({
             alt={item.fields.slug}
           />
         </div>
-        <div className="relative w-full max-w-[80vh] lg:w-1/2 sm:max-h-[80vh] aspect-video lg:aspect-square px-4 sm:px-8 py-8 text-4xl sm:text-6xl lg:content-center">
+        <div className="relative w-full max-w-[80vh] lg:w-1/2 sm:max-h-[80vh] aspect-video lg:aspect-square px-4 sm:px-8 py-8 text-4xl sm:text-6xl lg:content-center uppercase">
           <h1 className="font-semibold mb-2 lg:mb-4 text-sky-700 dark:text-slate-100">
             {item.fields.title}
           </h1>

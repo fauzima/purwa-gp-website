@@ -54,7 +54,7 @@ export default function HomeDrivers() {
         data-aos="fade-right"
         data-aos-once="true"
         href={"/team"}
-        className="flex w-fit mt-10 mx-auto p-5 h-9 items-center text-base text-slate-100 rounded ring-1 shadow shadow-indigo-200 ring-slate-900/10 dark:ring-0 dark:shadow-none dark:hover:shadow-none hover:bg-indigo-500 bg-sky-500 transition ease-in-out"
+        className="flex w-fit mt-10 mx-auto p-5 h-9 items-center text-base text-slate-100 rounded-sm ring-1 shadow shadow-indigo-200 ring-slate-900/10 dark:ring-0 dark:shadow-none dark:hover:shadow-none hover:bg-indigo-500 bg-sky-500 transition ease-in-out"
       >
         <h3>Meet the full team</h3>
         <FaArrowRight className="w-4 h-4 ml-2" />

@@ -9,7 +9,7 @@ export default async function TrackDetail({
 }) {
   const item: IGP = await getGPSlug(params.slug);
   return (
-    <div className="flex flex-col bg-slate-200 dark:bg-slate-500/50 py-4 rounded-md lg:w-[calc(50%-20px)] h-fit">
+    <div className="flex flex-col bg-slate-500/25 py-4 lg:w-[calc(50%-20px)] h-fit">
       <Image
         className="mt-8"
         priority
@@ -18,7 +18,7 @@ export default async function TrackDetail({
         height={2048}
         alt={item.fields.slug}
       />
-      <div className="mt-8 mx-4 flex flex-wrap justify-center text-base sm:text-lg lg:text-base xl:text-lg gap-2">
+      <div className="mt-8 mx-4 flex flex-wrap justify-center font-medium text-base sm:text-lg lg:text-base xl:text-lg gap-2">
         <p>First GP: {item.fields.firstGp} |</p>
         <p>Laps: {item.fields.laps} |</p>
         <p>Circuit Length: {item.fields.circuitLength.toFixed(3)} km |</p>
