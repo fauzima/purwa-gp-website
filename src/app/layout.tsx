@@ -27,12 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased ${jost.className} bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 transition-colors ease-in-out min-h-screen hover:cursor-default`}
+        className={`antialiased ${jost.className} min-h-screen bg-white text-slate-900 transition-colors ease-in-out hover:cursor-default dark:bg-slate-900 dark:text-slate-100`}
       >
         <ThemeContextProvider>
-          <div className="fixed inset-0 -z-50 pattern-dots pattern-slate-400 dark:pattern-slate-900 pattern-bg-white dark:pattern-bg-slate-700 pattern-size-2 pattern-opacity-20"></div>
+          <div className="pattern-dots fixed inset-0 -z-50 pattern-bg-white pattern-slate-400 pattern-opacity-20 pattern-size-2 dark:pattern-bg-slate-700 dark:pattern-slate-900"></div>
           {/* <HeaderImage /> */}
-          <div className="min-h-screen flex flex-col">
+          <div className="flex min-h-screen flex-col">
             <Navbar />
             <main className="flex-grow">{children}</main>
             <Footer />

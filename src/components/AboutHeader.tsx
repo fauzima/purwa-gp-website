@@ -12,9 +12,9 @@ export default function AboutHeader() {
     <div
       data-aos="zoom-in"
       data-aos-once="true"
-      className="flex flex-col text-slate-700 dark:text-slate-300 text-xl mb-[10vh]"
+      className="mb-[10vh] flex flex-col text-xl text-slate-700 dark:text-slate-300"
     >
-      <div className="h-[40vh] w-full bg-slate-100 dark:bg-black overflow-hidden mb-[5vh]">
+      <div className="mb-[5vh] h-[40vh] w-full overflow-hidden bg-slate-100 dark:bg-black">
         <Image
           src={Trophies}
           priority
@@ -22,8 +22,8 @@ export default function AboutHeader() {
           className="h-full w-full object-cover object-center"
         />
       </div>
-      <div className="max-w-screen-xl mx-auto w-full px-4 sm:px-8">
-        <h1 className="text-4xl sm:text-6xl font-light mb-[5vh] dark:text-sky-300">
+      <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-8">
+        <h1 className="mb-[5vh] text-4xl font-light dark:text-sky-300 sm:text-6xl">
           PURWA GP FORMULA 1 HERITAGE
         </h1>
         <div>

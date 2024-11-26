@@ -7,13 +7,13 @@ import Link from "next/link";
 export default async function SeasonPage() {
   const data: IGP[] = await getGP();
   return (
-    <div className="max-w-screen-2xl mx-auto mt-[5vh] px-4 sm:px-8 mb-[10vh] flex flex-col">
+    <div className="mx-auto mb-[10vh] mt-[5vh] flex max-w-screen-2xl flex-col px-4 sm:px-8">
       <div
         data-aos="fade-right"
         data-aos-once="true"
-        className="text-4xl md:text-6xl my-[10vh]"
+        className="my-[10vh] text-4xl md:text-6xl"
       >
-        <h1 className="font-semibold mb-2 lg:mb-4 text-sky-700 dark:text-slate-100">
+        <h1 className="mb-2 font-semibold text-sky-700 dark:text-slate-100 lg:mb-4">
           FORMULA 1 SCHEDULE
         </h1>
         <h1 className="font-light dark:text-sky-300">2024</h1>
@@ -32,11 +32,11 @@ export default async function SeasonPage() {
             <Link
               href={`/race/2024/${item.fields.slug}`}
               key={idx}
-              className="group flex flex-col text-2xl w-full md:w-[calc(50%-12px)] xl:w-[calc(33.33%-16px)] bg-slate-500/15 dark:bg-slate-500/25 hover:bg-slate-500/25 dark:hover:bg-slate-500/50 transition ease-in-out duration-300"
+              className="group flex w-full flex-col bg-slate-500/15 text-2xl transition duration-300 ease-in-out hover:bg-slate-500/25 dark:bg-slate-500/25 dark:hover:bg-slate-500/50 md:w-[calc(50%-12px)] xl:w-[calc(33.33%-16px)]"
             >
-              <div className="w-full aspect-square bg-slate-100 dark:bg-black overflow-hidden brightness-75 group-hover:brightness-100 transition ease-in-out duration-300">
+              <div className="aspect-square w-full overflow-hidden bg-slate-100 brightness-75 transition duration-300 ease-in-out group-hover:brightness-100 dark:bg-black">
                 <Image
-                  className="h-full w-full object-cover object-center group-hover:scale-110 transition-transform ease-in-out"
+                  className="h-full w-full object-cover object-center transition-transform ease-in-out group-hover:scale-110"
                   priority
                   src={`https:${item.fields.thumbnail.fields.file.url}`}
                   width={512}

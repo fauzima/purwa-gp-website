@@ -13,7 +13,7 @@ export default function PW2024({ className }: IProps) {
       height="598"
       xmlns="http://www.w3.org/2000/svg"
       fill="#38bdf8"
-      className={twMerge("w-20 h-20", className)}
+      className={twMerge("h-20 w-20", className)}
     >
       <path
         transform="translate(482,91)"

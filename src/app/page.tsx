@@ -5,7 +5,7 @@ import UpNext from "@/components/UpNext";
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col mt-[60px]">
+    <div className="mt-[60px] flex flex-col">
       <HomeHero />
       <HomeSubHero />
       <UpNext />

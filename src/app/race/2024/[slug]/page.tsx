@@ -35,13 +35,13 @@ export default async function GrandPrixPage({
 }) {
   const item: IGP = await getGPSlug(params.slug);
   return (
-    <div className="flex flex-col mt-[60px]">
+    <div className="mt-[60px] flex flex-col">
       <div
         data-aos="zoom-in"
         data-aos-once="true"
-        className="flex flex-col lg:flex-row-reverse mb-[10vh] lg:mb-[20vh]"
+        className="mb-[10vh] flex flex-col lg:mb-[20vh] lg:flex-row-reverse"
       >
-        <div className="w-full lg:w-1/2 lg:max-h-[80vh] aspect-[4_/_3] sm:aspect-video lg:aspect-square bg-slate-100 dark:bg-black overflow-hidden">
+        <div className="aspect-[4_/_3] w-full overflow-hidden bg-slate-100 dark:bg-black sm:aspect-video lg:aspect-square lg:max-h-[80vh] lg:w-1/2">
           <Image
             className="h-full w-full object-cover object-[30%] sm:object-center lg:object-[30%]"
             priority
@@ -51,19 +51,19 @@ export default async function GrandPrixPage({
             alt={item.fields.slug}
           />
         </div>
-        <div className="relative w-full max-w-[80vh] lg:w-1/2 sm:max-h-[80vh] aspect-video lg:aspect-square px-4 sm:px-8 py-8 text-4xl sm:text-6xl lg:content-center uppercase">
-          <h1 className="font-semibold mb-2 lg:mb-4 text-sky-700 dark:text-slate-100">
+        <div className="relative aspect-video w-full max-w-[80vh] px-4 py-8 text-4xl uppercase sm:max-h-[80vh] sm:px-8 sm:text-6xl lg:aspect-square lg:w-1/2 lg:content-center">
+          <h1 className="mb-2 font-semibold text-sky-700 dark:text-slate-100 lg:mb-4">
             {item.fields.title}
           </h1>
-          <h1 className="font-light mb-2 lg:mb-4 dark:text-sky-300">
+          <h1 className="mb-2 font-light dark:text-sky-300 lg:mb-4">
             2024 | ROUND {item.fields.round}
           </h1>
-          <IoMdArrowDown className="sm:absolute sm:bottom-0 text-8xl sm:text-[150px] text-teal-500" />
+          <IoMdArrowDown className="text-8xl text-teal-500 sm:absolute sm:bottom-0 sm:text-[150px]" />
         </div>
       </div>
-      <div className="max-w-screen-2xl w-full mx-auto px-4 sm:px-8 flex flex-col lg:flex-row gap-[5vh] lg:gap-10 mb-[10vh] lg:items-center">
-        <div className="flex flex-col lg:w-[calc(50%-20px)] gap-[5vh]">
-          <div className="flex flex-col text-4xl gap-2">
+      <div className="mx-auto mb-[10vh] flex w-full max-w-screen-2xl flex-col gap-[5vh] px-4 sm:px-8 lg:flex-row lg:items-center lg:gap-10">
+        <div className="flex flex-col gap-[5vh] lg:w-[calc(50%-20px)]">
+          <div className="flex flex-col gap-2 text-4xl">
             <h1 className="font-semibold text-sky-700 dark:text-slate-100">
               RACE WEEKEND
             </h1>

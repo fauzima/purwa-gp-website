@@ -1,20 +1,32 @@
 export default function FooterTexts() {
   return (
     <div className="flex flex-col text-slate-700 dark:text-slate-400">
-      <div className="flex flex-col lg:flex-row-reverse lg:justify-between text-lg lg:text-base items-center">
-        <ul className="flex flex-wrap justify-center gap-5 lg:gap-4 pb-5">
-          <li className="hover:underline hover:cursor-pointer hover:text-sky-500 transition ease-in-out">Career</li>
-          <li className="hover:underline hover:cursor-pointer hover:text-sky-500 transition ease-in-out">Investors</li>
-          <li className="hover:underline hover:cursor-pointer hover:text-sky-500 transition ease-in-out">Community Code</li>
-          <li className="hover:underline hover:cursor-pointer hover:text-sky-500 transition ease-in-out">Cookie Policy</li>
-          <li className="hover:underline hover:cursor-pointer hover:text-sky-500 transition ease-in-out">Privacy Policy</li>
-          <li className="hover:underline hover:cursor-pointer hover:text-sky-500 transition ease-in-out">Licensing</li>
+      <div className="flex flex-col items-center text-lg lg:flex-row-reverse lg:justify-between lg:text-base">
+        <ul className="flex flex-wrap justify-center gap-5 pb-5 lg:gap-4">
+          <li className="transition ease-in-out hover:cursor-pointer hover:text-sky-500 hover:underline">
+            Career
+          </li>
+          <li className="transition ease-in-out hover:cursor-pointer hover:text-sky-500 hover:underline">
+            Investors
+          </li>
+          <li className="transition ease-in-out hover:cursor-pointer hover:text-sky-500 hover:underline">
+            Community Code
+          </li>
+          <li className="transition ease-in-out hover:cursor-pointer hover:text-sky-500 hover:underline">
+            Cookie Policy
+          </li>
+          <li className="transition ease-in-out hover:cursor-pointer hover:text-sky-500 hover:underline">
+            Privacy Policy
+          </li>
+          <li className="transition ease-in-out hover:cursor-pointer hover:text-sky-500 hover:underline">
+            Licensing
+          </li>
         </ul>
-        <p className="text-center lg:text-start pb-5 text-sm ">
+        <p className="pb-5 text-center text-sm lg:text-start">
           © 2024 Purwa Grand Prix Engineering, Ltd. All Rights Reserved.
         </p>
       </div>
-      <p className="text-xs pb-3 sm:pb-8">
+      <p className="pb-3 text-xs sm:pb-8">
         This fictional website is created by Fauzi Makarim. Names, characters,
         places and incidents either are products of the author’s imagination or
         are used fictitiously and for educational purposes only. Any resemblance

@@ -16,7 +16,7 @@ export default function PurwaLogo({ className }: IProps) {
       width="1280"
       height="1178"
       fill="#38bdf8"
-      className={twMerge("w-20 h-20", className)}
+      className={twMerge("h-20 w-20", className)}
     >
       <g>
         <path

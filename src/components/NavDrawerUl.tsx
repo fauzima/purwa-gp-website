@@ -39,22 +39,22 @@ export default function NavDrawerUl({
               href={item.href}
               className={classNames(
                 isActive
-                  ? "group flex items-center mb-6 text-sky-500 dark:text-sky-500 text-2xl"
-                  : "group flex items-center mb-6 text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300 text-xl hover:text-2xl duration-75"
+                  ? "group mb-6 flex items-center text-2xl text-sky-500 dark:text-sky-500"
+                  : "group mb-6 flex items-center text-xl text-slate-500 duration-75 hover:text-2xl hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300",
               )}
             >
               <div
                 className={classNames(
                   isActive
-                    ? "mr-4 rounded-sm ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none group-hover:shadow-sky-200 dark:group-hover:bg-sky-500 dark:bg-sky-500"
-                    : "mr-4 rounded-sm ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none group-hover:shadow-indigo-200 dark:group-hover:bg-indigo-600 dark:bg-slate-700"
+                    ? "mr-4 rounded-sm shadow-sm ring-1 ring-slate-900/5 group-hover:shadow group-hover:shadow-sky-200 group-hover:ring-slate-900/10 dark:bg-sky-500 dark:shadow-none dark:ring-0 dark:group-hover:bg-sky-500 dark:group-hover:shadow-none"
+                    : "mr-4 rounded-sm shadow-sm ring-1 ring-slate-900/5 group-hover:shadow group-hover:shadow-indigo-200 group-hover:ring-slate-900/10 dark:bg-slate-700 dark:shadow-none dark:ring-0 dark:group-hover:bg-indigo-600 dark:group-hover:shadow-none",
                 )}
               >
                 <item.Icon
                   className={classNames(
                     isActive
-                      ? "h-8 w-8 p-[2px] fill-sky-500 dark:fill-sky-300"
-                      : "h-7 w-7 group-hover:h-8 group-hover:w-8 duration-75 p-1 fill-indigo-300 group-hover:fill-indigo-400 dark:fill-slate-300"
+                      ? "h-8 w-8 fill-sky-500 p-[2px] dark:fill-sky-300"
+                      : "h-7 w-7 fill-indigo-300 p-1 duration-75 group-hover:h-8 group-hover:w-8 group-hover:fill-indigo-400 dark:fill-slate-300",
                   )}
                 />
               </div>

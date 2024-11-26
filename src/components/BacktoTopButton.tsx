@@ -31,9 +31,9 @@ export default function BacktoTop() {
     <button
       onClick={scrolltoTop}
       aria-label="Back to top button"
-      className={`${isVisible ? "flex" : "hidden"} mt-5 lg:my-0 mx-auto lg:mx-0 px-3 py-5 h-9 items-center justify-center font-bold text-slate-900 dark:text-slate-300 hover:text-sky-700 dark:hover:text-sky-300 rounded-sm ring-1 shadow shadow-indigo-200 ring-slate-900/10 dark:ring-0 dark:shadow-none dark:hover:shadow-none dark:hover:bg-indigo-500 dark:bg-slate-600/25 transition ease-in-out`}
+      className={`${isVisible ? "flex" : "hidden"} mx-auto mt-5 h-9 items-center justify-center rounded-sm px-3 py-5 font-bold text-slate-900 shadow shadow-indigo-200 ring-1 ring-slate-900/10 transition ease-in-out hover:text-sky-700 dark:bg-slate-600/25 dark:text-slate-300 dark:shadow-none dark:ring-0 dark:hover:bg-indigo-500 dark:hover:text-sky-300 dark:hover:shadow-none lg:mx-0 lg:my-0`}
     >
-      <FaArrowUp className="w-4 h-4 mr-2" />
+      <FaArrowUp className="mr-2 h-4 w-4" />
       <h3>Back to top</h3>
     </button>
   );

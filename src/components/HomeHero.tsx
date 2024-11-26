@@ -14,9 +14,9 @@ export default function HomeHero() {
     <div
       data-aos="zoom-in"
       data-aos-once="true"
-      className="flex flex-col lg:flex-row-reverse mb-[15vh] lg:mb-[20vh]"
+      className="mb-[15vh] flex flex-col lg:mb-[20vh] lg:flex-row-reverse"
     >
-      <div className="w-full lg:w-1/2 lg:max-h-[80vh] aspect-[4_/_3] sm:aspect-video lg:aspect-square bg-slate-100 dark:bg-black overflow-hidden">
+      <div className="aspect-[4_/_3] w-full overflow-hidden bg-slate-100 dark:bg-black sm:aspect-video lg:aspect-square lg:max-h-[80vh] lg:w-1/2">
         <Image
           className="h-full w-full object-cover object-[30%] sm:object-center lg:object-[30%]"
           priority
@@ -24,14 +24,14 @@ export default function HomeHero() {
           alt="Hero"
         />
       </div>
-      <div className="relative w-full max-w-[80vh] lg:w-1/2 sm:max-h-[80vh] aspect-video lg:aspect-square px-4 sm:px-8 py-8 text-4xl sm:text-6xl lg:content-center">
-        <h1 className="font-semibold mb-2 lg:mb-4 text-sky-700 dark:text-slate-100">
+      <div className="relative aspect-video w-full max-w-[80vh] px-4 py-8 text-4xl sm:max-h-[80vh] sm:px-8 sm:text-6xl lg:aspect-square lg:w-1/2 lg:content-center">
+        <h1 className="mb-2 font-semibold text-sky-700 dark:text-slate-100 lg:mb-4">
           HOME OF THE
         </h1>
-        <h1 className="font-light mb-2 lg:mb-4 dark:text-sky-300">
+        <h1 className="mb-2 font-light dark:text-sky-300 lg:mb-4">
           PURWA GP FORMULA 1 TEAM
         </h1>
-        <IoMdArrowDown className="sm:absolute sm:bottom-0 text-8xl sm:text-[150px] text-teal-500" />
+        <IoMdArrowDown className="text-8xl text-teal-500 sm:absolute sm:bottom-0 sm:text-[150px]" />
       </div>
     </div>
   );

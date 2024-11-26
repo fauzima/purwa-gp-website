@@ -6,25 +6,25 @@ import FooterTexts from "./FooterTexts";
 
 export default function Footer() {
   return (
-    <footer className="relative w-full backdrop-blur flex-none transition-colors supports-[backdrop-blur]:bg-white/60 dark:bg-transparent border-t text-slate-700 dark:text-slate-500 border-slate-900/10 dark:border-slate-300/10">
-      <div className="max-w-screen-2xl mx-auto">
+    <footer className="relative w-full flex-none border-t border-slate-900/10 text-slate-700 backdrop-blur transition-colors supports-[backdrop-blur]:bg-white/60 dark:border-slate-300/10 dark:bg-transparent dark:text-slate-500">
+      <div className="mx-auto max-w-screen-2xl">
         <div className="mx-auto px-3 sm:px-4 lg:px-5">
           <div className="flex flex-col">
             <div className="lg:hidden">
               <BacktoTop />
             </div>
-            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-3 pt-5 lg:pt-8 pb-5 mx-auto lg:mx-0">
-              <div className="text-teal-500 transition ease-in-out  mr-3 flex gap-[2px] items-center text-lg font-bold">
+            <div className="mx-auto flex flex-col items-center gap-4 pb-5 pt-5 sm:flex-row sm:gap-3 lg:mx-0 lg:pt-8">
+              <div className="mr-3 flex items-center gap-[2px] text-lg font-bold text-teal-500 transition ease-in-out">
                 <PurwaLogo className="h-6 w-6 fill-sky-500 transition ease-in-out" />
                 <p className="italic">
-                  <span className="not-italic text-2xl font-medium text-slate-900 dark:text-slate-100">
+                  <span className="text-2xl font-medium not-italic text-slate-900 dark:text-slate-100">
                     PURWA
                   </span>
                   GP
                 </p>
               </div>
               <FooterSocialLinks />
-              <div className="hidden lg:block ml-auto">
+              <div className="ml-auto hidden lg:block">
                 <BacktoTop />
               </div>
             </div>

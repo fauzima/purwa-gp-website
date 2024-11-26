@@ -4,16 +4,16 @@ import darkrays from "../public/darkrays.png";
 
 export default function HeaderImage() {
   return (
-    <div className="absolute z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none">
-      <div className="w-[108rem] flex-none flex justify-end">
+    <div className="pointer-events-none absolute inset-x-0 top-0 z-20 flex justify-center overflow-hidden">
+      <div className="flex w-[108rem] flex-none justify-end">
         <Image
-          className="w-[71.75rem] flex-none max-w-none dark:hidden"
+          className="w-[71.75rem] max-w-none flex-none dark:hidden"
           src={lightrays}
           priority={true}
           alt="light rays"
         />
         <Image
-          className="w-[90rem] flex-none max-w-none hidden dark:block"
+          className="hidden w-[90rem] max-w-none flex-none dark:block"
           src={darkrays}
           alt="dark rays"
         />

@@ -16,7 +16,7 @@ export default function Management() {
   const fetchTeams = async () => {
     try {
       const response = await fetch(
-        "https://randomuser.me/api/?results=5&gender=male&nat=au,ca,ch,de,dk,fi,fr,gb,ie,nl,no,nz,us"
+        "https://randomuser.me/api/?results=5&gender=male&nat=au,ca,ch,de,dk,fi,fr,gb,ie,nl,no,nz,us",
       );
       const data = await response.json();
       setTeams(data.results);
@@ -34,39 +34,39 @@ export default function Management() {
     AOS.init();
   }, []);
   return (
-    <div className="max-w-screen-2xl mx-auto w-full mb-[10vh] lg:mb-[20vh] px-4 sm:px-8 flex flex-col text-4xl sm:text-5xl">
+    <div className="mx-auto mb-[10vh] flex w-full max-w-screen-2xl flex-col px-4 text-4xl sm:px-8 sm:text-5xl lg:mb-[20vh]">
       <div data-aos="fade-right" data-aos-once="true" className="mb-[5vh]">
         <h1 className="font-light dark:text-sky-300">MANAGEMENT</h1>
       </div>
-      <div className="hidden md:flex flex-wrap content-start gap-6 mb-[5vh]">
+      <div className="mb-[5vh] hidden flex-wrap content-start gap-6 md:flex">
         {loading
           ? Array.from({ length: 5 }).map((_, idx) => (
               <div
                 key={idx}
-                className="group relative w-full md:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] xl:w-[calc(25%-18px)] aspect-[3_/_4] bg-teal-500/75 hover:bg-teal-500 text-slate-100"
+                className="group relative aspect-[3_/_4] w-full bg-teal-500/75 text-slate-100 hover:bg-teal-500 md:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] xl:w-[calc(25%-18px)]"
               ></div>
             ))
           : teams.map((item, idx) => (
               <div
                 key={idx}
-                className="group relative w-full md:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] xl:w-[calc(25%-18px)] aspect-[3_/_4] overflow-hidden transition ease-in-out duration-300 text-slate-100"
+                className="group relative aspect-[3_/_4] w-full overflow-hidden text-slate-100 transition duration-300 ease-in-out md:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] xl:w-[calc(25%-18px)]"
               >
                 <Image
                   data-aos="fade-right"
                   data-aos-once="true"
-                  className="h-full w-full object-cover object-center brightness-90 group-hover:brightness-100 transition ease-in-out duration-300"
+                  className="h-full w-full object-cover object-center brightness-90 transition duration-300 ease-in-out group-hover:brightness-100"
                   src={`https://i.pravatar.cc/1000?img=${11 + idx}`}
                   alt={`${item.name.first} ${item.name.last}`}
                   width={1024}
                   height={1024}
                 />
-                <div className="px-5 py-3 absolute bottom-0 left-0 font-semibold">
+                <div className="absolute bottom-0 left-0 px-5 py-3 font-semibold">
                   {`${item.name.first} ${item.name.last}`}
                 </div>
               </div>
             ))}
       </div>
-      <div className="block md:hidden mb-[5vh] w-full">
+      <div className="mb-[5vh] block w-full md:hidden">
         <Swiper
           data-aos="fade-right"
           data-aos-once="true"
@@ -81,20 +81,20 @@ export default function Management() {
           {loading
             ? Array.from({ length: 8 }).map((_, idx) => (
                 <SwiperSlide key={idx}>
-                  <div className="group relative w-full aspect-[3_/_4] bg-teal-500/75 hover:bg-teal-500 overflow-hidden text-slate-100"></div>
+                  <div className="group relative aspect-[3_/_4] w-full overflow-hidden bg-teal-500/75 text-slate-100 hover:bg-teal-500"></div>
                 </SwiperSlide>
               ))
             : teams.map((item, idx) => (
                 <SwiperSlide key={idx}>
-                  <div className="group relative w-full aspect-[3_/_4] overflow-hidden transition ease-in-out duration-300 text-slate-100">
+                  <div className="group relative aspect-[3_/_4] w-full overflow-hidden text-slate-100 transition duration-300 ease-in-out">
                     <Image
-                      className="h-full w-full object-cover object-center brightness-90 group-hover:scale-105 group-hover:brightness-100 transition ease-in-out duration-300"
+                      className="h-full w-full object-cover object-center brightness-90 transition duration-300 ease-in-out group-hover:scale-105 group-hover:brightness-100"
                       src={`https://i.pravatar.cc/1000?img=${11 + idx}`}
                       alt={`${item.name.first} ${item.name.last}`}
                       width={1024}
                       height={1024}
                     />
-                    <div className="px-5 py-3 absolute bottom-0 left-0 font-semibold">
+                    <div className="absolute bottom-0 left-0 px-5 py-3 font-semibold">
                       {`${item.name.first} ${item.name.last}`}
                     </div>
                   </div>

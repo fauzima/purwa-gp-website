@@ -1,11 +1,9 @@
 import AboutHeader from "@/components/AboutHeader";
 
 export default function AboutPage() {
-    return (
-      <div className="flex flex-col mt-[60px]">
-        <AboutHeader />
-      </div>
-
-    );
-  }
-  
+  return (
+    <div className="mt-[60px] flex flex-col">
+      <AboutHeader />
+    </div>
+  );
+}

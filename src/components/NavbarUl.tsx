@@ -16,7 +16,7 @@ function classNames(...classes: string[]) {
 export default function NavbarUl() {
   const router = usePathname();
   return (
-    <ul className="hidden lg:flex gap-4 text-slate-900 dark:text-slate-300 lg:mx-auto font-spacegrotesk">
+    <ul className="hidden gap-4 font-spacegrotesk text-slate-900 dark:text-slate-300 lg:mx-auto lg:flex">
       {navigation.map((item, idx) => {
         const isActive = router === item.href;
         return (
@@ -25,8 +25,8 @@ export default function NavbarUl() {
               href={item.href}
               className={classNames(
                 isActive
-                  ? "w-24 h-9 flex items-center justify-center text-sky-600 dark:text-sky-400 rounded-sm ring-1 ring-slate-900/5 shadow-sm hover:shadow hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:hover:shadow-none hover:shadow-indigo-200 bg-white/50 dark:bg-sky-600/25 transition ease-in-out"
-                  : "w-24 h-9 flex items-center justify-center hover:text-sky-700 dark:hover:text-sky-300 rounded-sm ring-1 shadow shadow-indigo-200 ring-slate-900/10 dark:ring-0 dark:shadow-none dark:hover:shadow-none dark:hover:bg-indigo-500 bg-white/25 hover:bg-white/50 dark:bg-slate-600/25 transition ease-in-out"
+                  ? "flex h-9 w-24 items-center justify-center rounded-sm bg-white/50 text-sky-600 shadow-sm ring-1 ring-slate-900/5 transition ease-in-out hover:shadow hover:shadow-indigo-200 hover:ring-slate-900/10 dark:bg-sky-600/25 dark:text-sky-400 dark:shadow-none dark:ring-0 dark:hover:shadow-none"
+                  : "flex h-9 w-24 items-center justify-center rounded-sm bg-white/25 shadow shadow-indigo-200 ring-1 ring-slate-900/10 transition ease-in-out hover:bg-white/50 hover:text-sky-700 dark:bg-slate-600/25 dark:shadow-none dark:ring-0 dark:hover:bg-indigo-500 dark:hover:text-sky-300 dark:hover:shadow-none",
               )}
             >
               <h3>{item.name}</h3>

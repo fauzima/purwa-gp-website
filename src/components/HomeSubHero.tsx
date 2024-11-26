@@ -13,7 +13,7 @@ export default function HomeSubHero() {
     <div
       data-aos="fade-right"
       data-aos-once="true"
-      className="max-w-screen-2xl mx-auto w-full mb-[15vh] lg:mb-[20vh] px-4 sm:px-8 text-xl text-slate-700 dark:text-slate-300"
+      className="mx-auto mb-[15vh] w-full max-w-screen-2xl px-4 text-xl text-slate-700 dark:text-slate-300 sm:px-8 lg:mb-[20vh]"
     >
       <div className="flex flex-col gap-10">
         <p className="font-semibold">
@@ -32,19 +32,21 @@ export default function HomeSubHero() {
       </div>
       <Link
         href={"/about"}
-        className="flex w-fit mt-10 mx-auto lg:mx-0 p-5 h-9 items-center text-base text-slate-100 rounded-sm ring-1 shadow shadow-indigo-200 ring-slate-900/10 dark:ring-0 dark:shadow-none dark:hover:shadow-none hover:bg-indigo-500 bg-sky-500 transition ease-in-out"
+        className="mx-auto mt-10 flex h-9 w-fit items-center rounded-sm bg-sky-500 p-5 text-base text-slate-100 shadow shadow-indigo-200 ring-1 ring-slate-900/10 transition ease-in-out hover:bg-indigo-500 dark:shadow-none dark:ring-0 dark:hover:shadow-none lg:mx-0"
       >
         <h3>Read our full story</h3>
-        <FaArrowRight className="w-4 h-4 ml-2" />
+        <FaArrowRight className="ml-2 h-4 w-4" />
       </Link>
     </div>
   );
 }
-{/* <Link
+{
+  /* <Link
   href={"/about"}
   className="relative flex w-fit mt-10 p-5 h-9 items-center text-base rounded hover:bg-sky-500 transition ease-in-out"
 >
   <h3>Read our full story</h3>
   <FaArrowRight className="w-4 h-4 ml-2" />
   <div className="absolute -top-2 -left-2 h-4 w-4 rounded-full bg-slate-800 dark:bg-slate-100 animate-pulse"></div>
-</Link> */}
+</Link> */
+}
